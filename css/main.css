@@ -1,0 +1,566 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+/* VARIABLES */
+:root {
+  --sage: #283f21;
+  --champagne: #fffbea;
+  --moss: #94a776;
+  --rose: #d1765b;
+}
+/* MAIN */
+body {
+  padding: 10%;
+  padding-top: 5%;
+  font-family: 'Lato', sans-serif;
+  background-color:var(--champagne);
+}
+
+/* TEXT */
+.smaller{
+  font-size: .96rem;
+}
+
+.sample-type {
+  color: black;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.type p {
+  padding-bottom: 1rem;
+  border-bottom: solid tan .1rem;
+}
+
+h1{
+  color:var(--sage);
+  font-size: 2rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  color: black;
+  font-weight: normal;
+  margin-top: 0;
+  max-width:90%;
+  font-size: 1rem;
+}
+
+li{
+  margin-top: .8rem;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: rgba(210, 180, 140, 0.411);
+  display: block;
+}
+
+.element{
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color:tan;
+}
+
+a {
+	color: var(--moss);
+	transition: color 0.5s;
+}
+
+a:hover, a:focus {
+	color: var(--rose);
+	text-decoration: none;
+}
+
+ 
+::placeholder{
+  color: var(--moss);
+}
+
+.type{
+  padding: 2em;
+  border: solid tan .15rem;
+  border-radius: .5rem;
+}
+
+/* BUTTONS */
+.button-nav {
+  display: inline-block;
+  padding: 0.6rem;
+  color: white;
+  background-color: var(--moss);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: var(--rose);
+  color: white;
+}
+
+.button-navBar{
+  display: inline-block;
+  padding: 0.6rem;
+  color: white;
+  background-color: var(--moss);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.3s;
+  border-radius: .5rem;
+}
+
+.button-navBar:hover, .button-navBar:focus {
+  background-color: var(--champagne);
+}
+
+
+/* TITLE LOGO */
+.modu-logo{
+  height: 1em;
+  margin-right: .3rem;
+}
+
+/* COLOR */
+.main-color{
+  border-radius: .5rem;
+  background-color: #283f21;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: left;
+  color: var(--champagne)
+}
+.color-grid-container {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  display: grid;    
+  column-gap: .5rem;
+  /* https://stackoverflow.com/questions/47601564/equal-width-columns-in-css-grid */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.rose, .champagne, .sage, .moss, .tan {
+  border-radius: .5rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: left;
+  font-size: .8rem;
+  margin-bottom: .5rem;
+  overflow: hidden;
+}
+.rose{
+  background-color: var(--rose);
+}
+.champagne{
+  background-color: var(--champagne);
+  border: tan solid .15rem;
+}
+.tan{
+  background-color: tan;
+}
+.moss{
+  background-color: var(--moss)
+}
+
+/* IMAGERY */
+.imagery-grid-container{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: grid;    
+  column-gap: .5rem;
+  row-gap: .5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.imagery-grid-container img{
+  border-radius: .5rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* LOGO STYLES*/
+.logo-grid-container{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: .5rem;
+  align-items: stretch;
+  
+}
+.logo-grid-container div{
+  display: flex;
+  align-items: center;
+  padding: 6%;
+  border-radius: 0.5rem;  
+}
+.logo-grid-container img{
+  max-width:100%;
+  max-height: 100%;
+}
+.light-logo{
+  background-color: #d1765b;
+}
+.dark-logo{
+  border: solid tan .15rem;
+}
+.stacked-logo{
+  border: solid tan .15rem;
+}
+.stacked-logo img{
+  display:block;
+  margin:auto;
+  width: 45%;
+}
+
+/* https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css */
+/* IMAGE WITH LINK */
+#image-link img:hover, #image-link img:focus{
+  filter: blur(6px);
+  transition: 0.5s;
+
+}
+#image-link img{
+  margin: auto;
+  width: 25em;
+  border-radius: 0.5rem;
+}
+#image-link {
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: .5rem;
+  border: solid 1px white;
+}
+
+/* PRODUCTS PAGE--------------------------*/
+.product-row{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+
+  margin-top: 3rem;
+}
+.product-column{
+  height: 35rem;
+  padding: 1rem;
+  border: solid tan .15rem;
+  border-radius: .5rem;
+}
+
+.product-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem; 
+}
+  
+.product-img{
+  height: 60%;
+  border-radius: .5rem;
+}
+
+.heart{
+  color: tan;
+  background-color: var(--champagne);
+  border: solid tan .1rem;
+}
+
+.heart:hover{
+   color: var(--rose);
+   border: solid .1rem var(--rose);
+   background-color: rgb(245, 194, 171);
+}
+
+.product-buttons a{
+  padding: 4rem;
+  background-color: red;
+}
+
+.product-color{
+  max-width: 10rem;
+  margin-top: 1rem;
+  column-gap: .5rem;
+  display: flex;
+}
+
+.rose-color, .sage-color, .tan-color, .moss-color{
+  border-radius: .5rem;
+  width: 2rem;
+  height: 1rem;
+}
+.rose-color{
+  background-color: var(--rose);
+}
+.sage-color{
+  background-color: rgb(55, 80, 105);
+}
+.tan-color{
+  background-color: tan;
+}
+.moss-color{
+  background-color: var(--moss);
+}
+
+.product-column-sample{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+
+  border: solid tan .15rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  width: 20rem;
+}
+
+.product-column-sample img{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  width: 20rem;
+}
+
+/* CHECK OUT PAGE--------------------------*/
+.cart-grid-container-sample{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.cart-grid-container-sample img{
+  width: 100%;
+  height:16rem;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 0.5rem;  
+}
+.cart-grid-container-sample div{
+  display: grid;
+  width: 16rem;
+  border: solid tan .15rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+}
+
+/* INPUT and FORMS*/
+input{
+  padding: 0.8rem;
+  margin-top: 1rem;
+  margin-left: 0rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: var(--moss);
+  border-radius: 0.5rem;
+  font-family: 'Lato', sans-serif;
+  border-style: none;
+  transition-duration: 0.5s;
+} 
+
+input:hover, input:focus{
+  background-color: var(--rose);
+}
+
+input[type="reset"]{
+  background-color: var(--champagne);
+  border: solid var(--moss).1rem;
+}
+
+input[type="reset"]:hover, input[type="reset"]:focus{
+  border: var(--rose) solid .1rem;
+  background-color: rgb(245, 194, 171);
+}
+
+#form-input{
+  background-color: white;
+  border: 1px solid #c6c7cc;
+  margin-top: .5rem;
+}
+
+#sea-blue{
+  margin-bottom: 3rem;
+}
+
+input[type=radio]{
+  margin: 0.5rem;
+  margin-left: 0rem;
+  accent-color: #546639;
+}
+
+/* https://stackoverflow.com/questions/2599627/how-to-select-label-for-xyz-in-css */
+label[for=quantity-input], label[for=form-comment], label[for=form-input]{
+  margin-top: 0%;
+  font-weight:600;
+  color: var(--sage);
+}
+.quantity-input{
+  background-color: white;
+  border: 1px solid var(--sage);
+  width: 3rem;
+  margin-top: .5rem;
+}
+.quantity-input:hover, #form-comment:hover, #form-input:hover, #card-num-input:hover, #card-date-input:hover, #card-cvv-input:hover, #card-name-input:hover, textarea:hover, textarea:focus{
+  transition-duration: 0.5s;
+  background-color: rgb(230, 230, 230);
+  
+}
+
+#form-comment, #form-input, #card-num-input, #card-date-input, #card-name-input, #card-cvv-input{
+  padding-left: 1rem;
+  background-color: white;
+  margin: 0.5rem;
+  margin-left: 0rem;
+  margin-right: 1rem;
+  border: 1px solid var(--sage);
+}
+
+#card-num-input, #card-name-input{
+  width: 72%;
+}
+#card-cvv-input{
+  width:50%;
+}
+
+.payment-detail{
+  display: grid;
+  grid-template-columns: 2fr .5fr;
+  width: 80%;
+}
+
+label{
+  margin-left: 0%;
+  margin-right: .5rem;
+}
+
+.form-sample{
+  padding: 1rem;
+  border: .15rem solid tan;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: fit-content;
+}
+
+textarea{
+  background: white;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-family: 'Lato', sans-serif;
+  border: 1px solid #c6c7cc;
+}
+
+.back-button{
+  background-color: var(--moss);
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 1.6rem;
+  padding-top: 0;
+  padding-bottom: 0.2rem;
+}
+
+/* SHOPPING CART TEMPLATE -------------------*/ 
+.cart-grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2rem;
+  gap: .5rem;
+}
+
+.cart-grid-container img{
+  width: 100%;
+  height:16rem;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 0.5rem;  
+}
+.cart-grid-container div{
+  display: grid;
+  border: solid tan .15rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.payment-form-container{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .5rem;
+}
+.payment-form-block{
+  padding: 1rem;
+  border: solid var(--sage) .15rem;
+  border-radius: .5rem;
+}
+
+#checkout{
+  margin-top: 2rem;
+}
+
+
+/* MEDIA QUERIES------------------- */
+@media screen and (max-width: 1000px){
+  /* INDEX */
+  .color-grid-container{
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .imagery-grid-container{
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* PRODUCT TEMPLATE */
+  .product-column{
+    height: 30rem;
+  }
+  .product-img{
+    height: 50%;
+  }
+  .product-row{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px){
+  /* INDEX */
+  .color-grid-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .product-row{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .product-column{
+    overflow: hidden;
+  }
+  /* SHOPPING CART TEMPLATE */
+  .cart-grid-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 2rem;
+  }
+  .payment-form-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .payment-detail{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
