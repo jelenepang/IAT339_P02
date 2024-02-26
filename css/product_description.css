@@ -366,24 +366,23 @@ p {
     color: #666;
 }
 
-/* CSS for image container */
 .image-container {
-    display: flex;
-    flex-direction: column; /* Display images vertically */
-    align-items: center; /* Center images horizontally */
-    border: 3px solid  #94a776; /* Border around the box */
-    border-radius: .5rem; /* Rounded corners */
-    padding: 10px; /* Padding inside the box */
-
+  display: flex;
 }
 
-/* CSS for images */
-.image-container img {
-      width: 300px; /* Set specific width */
-      height: auto; /* Maintain aspect ratio */
-      margin-bottom: 20px; /* Add some space between images */
-      border-radius: .5rem;
+.image-box {
+  margin: 10px; /* Adjust spacing between boxes */
+  border: 1px solid #ccc; /* Add border to create box effect */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow content */
 }
+
+.image-box img {
+  display: block;
+  width: 100%; /* Ensure image fills the box */
+  height: auto; /* Maintain aspect ratio */
+}
+
 
 
 @media screen and (max-width: 600px){
