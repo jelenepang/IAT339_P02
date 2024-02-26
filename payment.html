@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout Template</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <header>
+        <a class="button-nav back-button" href="checkout.html">⬅</a>
+        <h1> <img class="modu-logo" src="img/modu_logo.png" alt="MODU logo illustration"><span class='smaller'>FURNITURES</span></h1>
+    </header><br>
+
+      <section class="element">
+
+<!-- PAYMENT SECTION -->
+      <section>
+        <div class="payment-form-container">
+            <div class="payment-form-block">
+                <form method="post" action="#">
+                    <h4>PAYMENT</h4><br>
+
+                    <p>Please provide your credit card information in the form below.</p>
+                    <label for="form-comment">Credit Card Information</label><br>
+                    <input id="card-num-input" type="text" placeholder="Card Number"><br>
+                    <input id="card-name-input" type="text" placeholder="Card Holder Name"><br>
+                    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month -->
+                    <input id="card-date-input" type="month" placeholder="Expiry Date">
+                    <input id="card-cvv-input" type="number" placeholder="cvv"><br>
+                </form>
+            </div>
+            <div class="payment-form-block">
+                <form method="post" action="#">
+                    <h4>ORDER SUMMARY</h4><br>
+                    <p>Feel free to place any comments in the text area provided below.</p>
+                    <label for="form-comment">Comment</label><br>
+                    <textarea id="form-comment" placeholder="Type here"></textarea><br>
+                </form>
+                    <p>Subtotal: $8,999.97<br>
+                    GST: $449.99<br>
+                    PST: $629.99<br>
+                    Total: $10,079.97
+                    </p>
+            </div>
+        </div>
+      <input type="reset" value="Cancel">
+      <input id="checkout" type="submit" value="Pay Now">
+    </section><br><br>
+    </section>
+
+
+</body>
+</html>

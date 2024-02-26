@@ -1,0 +1,313 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+/* VARIABLES */
+:root {
+  --sage: #283f21;
+  --champagne: #fffbea;
+  --moss: #94a776;
+  --rose: #d1765b;
+}
+/* MAIN */
+body {
+  padding: 10%;
+  padding-top: 5%;
+  font-family: 'Lato', sans-serif;
+  background-color:var(--champagne);
+}
+
+/* TEXT */
+.smaller{
+  font-size: .96rem;
+}
+
+.sample-type {
+  color: black;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.type p {
+  padding-bottom: 1rem;
+  border-bottom: solid tan .1rem;
+}
+
+h1{
+  color:var(--sage);
+  font-size: 2rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  color: black;
+  font-weight: normal;
+  margin-top: 0;
+  max-width:90%;
+  font-size: 1rem;
+}
+
+li{
+  margin-top: .8rem;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: rgba(210, 180, 140, 0.411);
+  display: block;
+}
+
+.element{
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color:tan;
+}
+
+a {
+	color: var(--moss);
+	transition: color 0.5s;
+}
+
+a:hover, a:focus {
+	color: var(--rose);
+	text-decoration: none;
+}
+
+
+::placeholder{
+  color: var(--moss);
+}
+
+.type{
+  padding: 2em;
+  border: solid tan .15rem;
+  border-radius: .5rem;
+}
+
+/* BUTTONS */
+.button-nav {
+  display: inline-block;
+  padding: 0.6rem;
+  color: white;
+  background-color: var(--moss);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: var(--rose);
+  color: white;
+}
+
+.button-navBar{
+  display: inline-block;
+  padding: 0.6rem;
+  color: white;
+  background-color: var(--moss);
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  border-radius: .5rem;
+}
+
+.button-navBar:hover, .button-navBar:focus {
+  background-color: var(--champagne);
+}
+
+
+/* TITLE LOGO */
+.modu-logo{
+  height: 1em;
+  margin-right: .3rem;
+}
+
+/* COLOR */
+.main-color{
+  border-radius: .5rem;
+  background-color: #283f21;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: left;
+  color: var(--champagne)
+}
+.color-grid-container {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  display: grid;
+  column-gap: .5rem;
+  /* https://stackoverflow.com/questions/47601564/equal-width-columns-in-css-grid */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.rose, .champagne, .sage, .moss, .tan {
+  border-radius: .5rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: left;
+  font-size: .8rem;
+  margin-bottom: .5rem;
+  overflow: hidden;
+}
+.rose{
+  background-color: var(--rose);
+}
+.champagne{
+  background-color: var(--champagne);
+  border: tan solid .15rem;
+}
+.tan{
+  background-color: tan;
+}
+.moss{
+  background-color: var(--moss)
+}
+
+/* IMAGERY */
+.imagery-grid-container{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: grid;
+  column-gap: .5rem;
+  row-gap: .5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.imagery-grid-container img{
+  border-radius: .5rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* LOGO STYLES*/
+.logo-grid-container{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: .5rem;
+  align-items: stretch;
+
+}
+.logo-grid-container div{
+  display: flex;
+  align-items: center;
+  padding: 6%;
+  border-radius: 0.5rem;
+}
+.logo-grid-container img{
+  max-width:100%;
+  max-height: 100%;
+}
+.light-logo{
+  background-color: #d1765b;
+}
+.dark-logo{
+  border: solid tan .15rem;
+}
+.stacked-logo{
+  border: solid tan .15rem;
+}
+.stacked-logo img{
+  display:block;
+  margin:auto;
+  width: 45%;
+}
+
+/* https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css */
+/* IMAGE WITH LINK */
+#image-link img:hover, #image-link img:focus{
+  filter: blur(6px);
+  transition: 0.5s;
+
+}
+#image-link img{
+  margin: auto;
+  width: 25em;
+  border-radius: 0.5rem;
+}
+#image-link {
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: .5rem;
+  border: solid 1px white;
+}
+
+
+.product-description {
+    background-color: rgba(148, 167, 118, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* CSS for image container */
+.image-container {
+    display: flex;
+    flex-direction: column; /* Display images vertically */
+    align-items: center; /* Center images horizontally */
+    border: 3px solid  #94a776; /* Border around the box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    margin: 10px; /* Margin around the box */
+}
+
+/* CSS for images */
+.image-container img {
+      width: 300px; /* Set specific width */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Add some space between images */
+}
+
+
+@media screen and (max-width: 600px){
+  /* INDEX */
+  .color-grid-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .product-row{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .product-column{
+    overflow: hidden;
+  }
+  /* SHOPPING CART TEMPLATE */
+  .cart-grid-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 2rem;
+  }
+  .payment-form-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .payment-detail{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
