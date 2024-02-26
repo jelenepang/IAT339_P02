@@ -10,126 +10,69 @@
 
   <body>
     <header>
-        <a class="button-nav back-button" href="index.html">⬅</a>
-        <h1> <img class="modu-logo" src="img/modu_logo.png" alt="MODU logo illustration"><span class='smaller'>FURNITURES</span></h1>        
-    </header><br>
+      <h1> <a href="home.html"><img class="modu-logo" src="img/modu_logo.png" alt="MODU logo illustration"></a></h1>
+      <div>
+      <nav>     
+          <a class="button-navBar" href="home.html">Home</a>
+          <a class="button-navBar" href="products.html">Products</a>
+          <a class="button-navBar" href="update.html">MODU Updates</a>
+          <a class="button-navBar" href="contact.html">Contact Us</a>
+      </nav>
+
+      <div>
+        <a class="burger-navBar" href="#"><img class="icon" src="img/menu-icon.png" alt=""></a>
+        <input id="search-bar" type="text" placeholder="Search.." name="search">
+        <a class="button2-navBar" href="#"><img class="icon" src="img/search-icon.png" alt=""></a>
+        <a class="button2-navBar-active" href="checkout.html"><img class="icon" src="img/cart-icon.png" alt=""></a>
+        <a class="button2-navBar" href="#"><img class="icon" src="img/heart-icon.png" alt=""></a>
+      </div>
+    </div>
+  </header>
 
       <section class="element">
 
-      <h2>SHOPPING CART <span class='smaller'>CHECKOUT TEMPLATE</span> </h2>
       <!-- PRODUCT SECTION -->
           <section id="product">
             <div class="cart-grid-container">
-              <div> 
+              <div>
                 <img src="img/sofa1.jpg" alt="a sofa"><br><a href="#">Click here for product description</a>
                 <h4>PUFF Modular Sofa</h4>
                 <p>$2999.99</p>
                 <label for="quantity-input">Quantity</label>
                 <input class="quantity-input" type="number" placeholder="1">
-                <br>     
+                <br>
               </div>
-              <div> 
+              <div>
                 <img src="img/sofa2.jpg" alt="a sofa"><br><a href="#">Click here for product description</a>
                 <h4>TUFF Modular Sofa</h4>
                 <p>$2999.99</p>
                 <label for="quantity-input">Quantity</label>
                 <input class="quantity-input" type="number" placeholder="1">
-                <br>     
+                <br>
               </div>
-              <div> 
+              <div>
                 <img src="img/sofa5.jpg" alt="a sofa"><br><a href="#">Click here for product description</a>
                 <h4>BURGER Modular Sofa</h4>
                 <p>$2999.99</p>
                 <label for="quantity-input">Quantity</label>
                 <input class="quantity-input" type="number" placeholder="1">
-                <br>     
+                <br>
               </div>
             </div>
+            <input id="checkout" type="submit" value="Go to Payment">
           </section>
       </section>
 
-<!-- PAYMENT SECTION -->
-      <section>
-        <div class="payment-form-container">
-            <div class="payment-form-block">
-                <form method="post" action="#">
-                    <h4>PAYMENT</h4><br>
-                    
-                    <p>Please provide your credit card information in the form below.</p>
-                    <label for="form-comment">Credit Card Information</label><br>
-                    <input id="card-num-input" type="text" placeholder="Card Number"><br>
-                    <input id="card-name-input" type="text" placeholder="Card Holder Name"><br>
-                    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month -->
-                    <input id="card-date-input" type="month" placeholder="Expiry Date">
-                    <input id="card-cvv-input" type="number" placeholder="cvv"><br>
-                </form>
-            </div>
-            <div class="payment-form-block">
-                <form method="post" action="#">
-                    <h4>ORDER SUMMARY</h4><br>
-                    <p>Feel free to place any comments in the text area provided below.</p>
-                    <label for="form-comment">Comment</label><br>
-                    <textarea id="form-comment" placeholder="Type here"></textarea><br>
-                </form>
-                    <p>Subtotal: $8,999.97<br> 
-                    GST: $449.99<br>
-                    PST: $629.99<br>
-                    Total: $10,079.97
-                    </p>
-            </div>
-        </div>
-      <input type="reset" value="Cancel">
-      <input id="checkout" type="submit" value="Pay Now">
-    </section><br><br>
+      <script>
+      document.getElementById("checkout").addEventListener("click", function() {
+      window.location.href = "payment.html"; // Replace "payment.html" with the URL of the destination HTML page
+      });
+      </script>
 
-    <section>
-      <h4>Sample code:</h4><br>
-      <code>&lt;section class="element"&gt;</code>
-      <code>&lt;div class="cart-grid-container"&gt;</code>
-      <code>&lt;div&gt;</code>
-      <code>&lt;img src="img/sofa1.jpg" alt="a sofa">&lt;br>&lt;a href="#">Click here for product description&lt;/a&gt;</code>
-      <code>&lt;h4>PUFF Modular Sofa&lt;/h4&gt;</code>
-      <code>&lt;p>$2999.99&lt;/p&gt;</code>
-      <code>&lt;label for="quantity-input">Quantity&lt;/label&gt;</code>
-      <code>&lt;input class="quantity-input" type="number" placeholder="1"&gt;</code>
-      <code>&lt;br&gt;&lt;/code&gt;</code>
-      <code>&lt;/div&gt;</code><br>
-      <code>**NOTE: REPEAT ABOVE AS MANY TIMES AS DESIRED**</code><br>
-      <code>&lt;/section&gt;</code>
 
-      <code>&lt;section&gt;</code>
-      <code>&lt;div class="payment-form-container"&gt;</code>
-      <code>&lt;div class="payment-form-block"&gt;</code>
-      <code>&lt;form method="post" action="#"&gt;</code>
-      <code>&lt;h4>PAYMENT&lt;/h4>&lt;br&gt;</code>
-            
-      <code>&lt;p>Please provide your credit card information in the form below.&lt;/p&gt;</code>
-      <code>&lt;label for="form-comment">Credit Card Information&lt;/label>&lt;br&gt;</code>
-      <code>&lt;input id="card-num-input" type="text" placeholder="Card Number">&lt;br&gt;</code>
-      <code>&lt;input id="card-name-input" type="text" placeholder="Card Holder Name">&lt;br&gt;</code>
-      <code>&lt;input id="card-date-input" type="month" placeholder="Expiry Date"&gt;</code>
-      <code>&lt;input id="card-cvv-input" type="number" placeholder="cvv">&lt;br&gt;</code>
-      <code>&lt;/form&gt;</code>
-      <code>&lt;/div&gt;</code>
-      <code>&lt;div class="payment-form-block"&gt;</code>
-      <code>&lt;form method="post" action="#"&gt;</code>
-      <code>&lt;h4>ORDER SUMMARY&lt;/h4>&lt;br&gt;</code>
-      <code>&lt;p>Feel free to place any comments in the text area provided below.&lt;/p&gt;</code>
-      <code>&lt;label for="form-comment">Comment&lt;/label>&lt;br&gt;</code>
-      <code>&lt;textarea id="form-comment" placeholder="Type here">&lt;/textarea>&lt;br&gt;</code>
-      <code>&lt;/form&gt;</code>
-      <code>&lt;p>Subtotal: $8,999.97&lt;br&gt;</code>
-      <code>GST: $449.99&lt;br&gt;</code>
-      <code>PST: $629.99&lt;br&gt;</code>
-      <code>Total: $10,079.97&gt;</code>
-      <code>&lt;/p&gt;</code>
 
-      <code>&lt;/div&gt;</code>
-      <code>&lt;/div&gt;</code>
-      <code>&lt;input type="reset" value="Cancel"&gt;</code>
-      <code>&lt;input id="checkout" type="submit" value="Pay Now"&gt;</code>
-      <code>&lt;/section&gt;</code>
-    </section>
+
+
 
 </body>
 </html>

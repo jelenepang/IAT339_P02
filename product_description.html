@@ -8,20 +8,39 @@
 </head>
 <body>
     <header>
-        <a class="button-nav back-button" href="products.html">⬅</a>
-        <h1> <img class="modu-logo" src="img/modu_logo.png" alt="MODU logo illustration"><span class='smaller'>FURNITURES</span></h1><br>
+        <h1> <a href="home.html"><img class="modu-logo" src="img/modu_logo.png" alt="MODU logo illustration"></a></h1>
+        <div>
+        <nav>     
+            <a class="button-navBar" href="home.html">Home</a>
+            <a class="button-navBar" href="products.html">Products</a>
+            <a class="button-navBar" href="update.html">MODU Updates</a>
+            <a class="button-navBar" href="contact.html">Contact Us</a>
+        </nav>
+
+        <div>
+          <a class="burger-navBar" href="#"><img class="icon" src="img/menu-icon.png" alt=""></a>
+          <input id="search-bar" type="text" placeholder="Search.." name="search">
+          <a class="button2-navBar" href="#"><img class="icon" src="img/search-icon.png" alt=""></a>
+          <a class="button2-navBar" href="checkout.html"><img class="icon" src="img/cart-icon.png" alt=""></a>
+          <a class="button2-navBar" href="#"><img class="icon" src="img/heart-icon.png" alt=""></a>
+        </div>
+      </div>
     </header>
-    <div class="product-description">
-        <h2>Product Description</h2>
-        <p>The sofa is a comfortable and stylish piece of furniture,
-          perfect for relaxing or entertaining guests. With its plush cushions and durable upholstery,
-          it provides a cozy seating option for any living space. Its sleek design adds a touch of elegance to any room,
-          enhancing its aesthetic appeal.</p>
-    </div>
-    <div class="image-container"> <!-- Wrap images in a container with box styling -->
-        <img src="img/sofa_description.jpeg" alt="Product Image">
-        <img src="img/sofa_description1.jpeg" alt="Product Image">
-    </div>
+    <section id="description">
+      
+      <div class="product-description">
+        <a class="button-navBar" href="products.html">Back</a>
+          <h3>THE PLAIN SOFA</h3>
+          <p>The sofa is a comfortable and stylish piece of furniture,
+            perfect for relaxing or entertaining guests. With its plush cushions and durable upholstery,
+            it provides a cozy seating option for any living space. Its sleek design adds a touch of elegance to any room,
+            enhancing its aesthetic appeal.</p>
+      </div>
+      <div class="image-container"> <!-- Wrap images in a container with box styling -->
+          <img src="img/sofa_description.jpeg" alt="Product Image">
+          <img src="img/sofa_description1.jpeg" alt="Product Image">
+      </div>
+    </section>
 
 </body>
 </html>

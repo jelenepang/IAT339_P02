@@ -6,16 +6,115 @@
 /* VARIABLES */
 :root {
   --sage: #283f21;
-  --champagne: #fffbea;
+  --champagne: #fffdf4;
   --moss: #94a776;
   --rose: #d1765b;
 }
 /* MAIN */
 body {
-  padding: 10%;
+  padding-right: 15%;
+  padding-left: 15%;
   padding-top: 5%;
   font-family: 'Lato', sans-serif;
   background-color:var(--champagne);
+}
+
+#description{
+  margin-top: 8rem;
+}
+.icon{
+  height: 1rem;
+}
+
+header{
+  /* display: flex; */
+  align-items: center;
+  flex-direction: row;
+  border-bottom: solid .15rem tan;
+}
+header div{
+  margin-left: auto;
+  margin-bottom: 1rem;
+  order: 2;
+  display: flex ;
+}
+
+/* TITLE LOGO */
+.modu-logo{
+  height: 1.15em;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+
+#search-bar{
+  background-color: var(--champagne);
+  border: solid 0.1rem var(--moss);
+  height: .8rem;
+  margin: 0;
+}
+
+.button2-navBar{
+  display: inline-block;
+  padding: 0.6rem;
+  background-color: var(--champagne);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.3s;
+  border-radius: .5rem;
+  border: var(--moss) solid .1rem;
+  margin-left: .1rem;
+  align-items: center;
+}
+
+.button2-navBar img:hover, .button2-navBar img:focus {
+  filter: invert(49%) sepia(51%) saturate(488%) hue-rotate(327deg) brightness(98%) contrast(90%);
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  
+}
+.button2-navBar:hover, .button2-navBar:focus, #search-bar:hover, #search-bar:focus {
+  border: var(--rose) solid .1rem;
+  color: var(--rose);
+}
+
+#search-bar:hover, #search-bar:focus {
+  background-color: rgb(245, 194, 171);
+  
+}
+
+#search-bar:hover::placeholder, #search-bar:focus::placeholder {
+  color: var(--rose);
+  
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+input{
+  padding: 0.8rem;
+  margin-top: 1rem;
+  margin-left: 0rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: var(--moss);
+  border-radius: 0.5rem;
+  font-family: 'Lato', sans-serif;
+  border-style: none;
+  transition-duration: 0.5s;
+} 
+
+input:hover, input:focus{
+  background-color: var(--rose);
+}
+
+input[type="reset"]{
+  background-color: var(--champagne);
+  border: solid var(--moss).1rem;
+}
+
+input[type="reset"]:hover, input[type="reset"]:focus{
+  border: var(--rose) solid .1rem;
+  background-color: rgb(245, 194, 171);
 }
 
 /* TEXT */
@@ -29,10 +128,10 @@ body {
   margin-bottom: 1%;
 }
 
-.type p {
+/* .type p {
   padding-bottom: 1rem;
   border-bottom: solid tan .1rem;
-}
+} */
 
 h1{
   color:var(--sage);
@@ -51,7 +150,7 @@ p {
   color: black;
   font-weight: normal;
   margin-top: 0;
-  max-width:90%;
+  /* max-width:90%; */
   font-size: 1rem;
 }
 
@@ -98,6 +197,9 @@ a:hover, a:focus {
 }
 
 /* BUTTONS */
+.burger-navBar{
+  display: none;
+}
 .button-nav {
   display: inline-block;
   padding: 0.6rem;
@@ -127,13 +229,6 @@ a:hover, a:focus {
 
 .button-navBar:hover, .button-navBar:focus {
   background-color: var(--champagne);
-}
-
-
-/* TITLE LOGO */
-.modu-logo{
-  height: 1em;
-  margin-right: .3rem;
 }
 
 /* COLOR */
@@ -254,10 +349,13 @@ a:hover, a:focus {
 
 .product-description {
     background-color: rgba(148, 167, 118, 0.3);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
+    border-radius: .5rem;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* padding: 20px; */
+    /* margin: 20px; */
+    width: fit-content;
+    padding: 2rem;
+    margin-bottom: 1rem;  
 }
 
 h2 {
@@ -274,9 +372,9 @@ p {
     flex-direction: column; /* Display images vertically */
     align-items: center; /* Center images horizontally */
     border: 3px solid  #94a776; /* Border around the box */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: .5rem; /* Rounded corners */
     padding: 10px; /* Padding inside the box */
-    margin: 10px; /* Margin around the box */
+
 }
 
 /* CSS for images */
@@ -284,6 +382,7 @@ p {
       width: 300px; /* Set specific width */
       height: auto; /* Maintain aspect ratio */
       margin-bottom: 20px; /* Add some space between images */
+      border-radius: .5rem;
 }
 
 
@@ -311,3 +410,110 @@ p {
     grid-template-columns: auto;
   }
 }
+
+/* ---------------------------- */
+
+@media screen and (max-width: 1266px){
+  header{
+    display: block;
+  }
+  header div{
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .imagery-grid-container{
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile-grid-container{
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  #section4{
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 0;
+    margin-top: 16rem;
+  }
+  #blank{
+    display: none;
+  }
+}
+
+  @media screen and (max-width: 1010px){
+    header div{
+      display: block;
+      margin-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    .imagery-grid-container{
+      flex-wrap: wrap;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    #section2{
+      flex-wrap: wrap;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 16rem;
+      row-gap: 4rem;
+    }
+    #section2 div{
+      padding: 0;
+    }
+    #backgroundColor{
+      height: 48rem;
+    }
+    #backgroundColor2{
+      height: 48rem;
+    }
+    #section3{
+      margin-top: 16rem;
+    }
+    #section3 h3{
+      margin-top: 3rem;
+    }
+    .profile-grid-container{
+      flex-wrap: wrap;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .profile-grid-container img{
+      height: 25rem;
+    }
+    #section4{
+      margin-top: 16rem;
+      margin-bottom: 4rem;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      row-gap: 1rem;
+
+    }
+    #backgroundColor2{
+      height: 100rem;
+    }
+  }
+
+  @media screen and (max-width: 580px){
+    header nav{
+      display: none;
+    }
+    .burger-navBar{
+      display: inline-block;
+      padding: 0.6rem;
+      background-color: var(--moss);
+      text-decoration: none;
+      transition-property: background-color; 
+      transition-duration: 0.3s;
+      border-radius: .5rem;
+      margin-left: .1rem;
+      align-items: center;
+    }
+    .image-container img {
+      width: 15rem;
+  }
+  .image-container{
+    overflow: hidden;
+  }
+
+  }
+

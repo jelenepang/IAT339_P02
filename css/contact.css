@@ -87,7 +87,7 @@
   .burger-navBar{
     display: none;
   }
-  .button-navBar{
+  .button-navBar, .button-navBar-active{
     display: inline-block;
     padding: 0.6rem;
     color: white;
@@ -100,6 +100,9 @@
   
   .button-navBar:hover, .button-navBar:focus {
     background-color: var(--champagne);
+  }
+  .button-navBar-active{
+    background-color: var(--sage);
   }
 
   #search-bar:hover, #search-bar:focus {
@@ -264,6 +267,15 @@
     margin-top: 8rem;
     margin-bottom: 10rem;
   }
+  a {
+    color: var(--moss);
+    transition: color 0.5s;
+  }
+  
+  a:hover, a:focus {
+    color: var(--rose);
+    text-decoration: none;
+  }
 
 
 
@@ -306,6 +318,9 @@
 }
 
     @media screen and (max-width: 800px){
+      iframe{
+        height: 25rem;
+      }
       .imagery-grid-container{
         flex-wrap: wrap;
         grid-template-columns: repeat(1, minmax(0, 1fr));
