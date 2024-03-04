@@ -137,6 +137,12 @@ h1{
   font-size: 2rem;
 }
 
+h2 {
+  color: #333;
+  text-align: center;
+  padding: 20px 0 40px;
+}
+
 h3 {
   margin-top: 2rem;
 }
