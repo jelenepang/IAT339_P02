@@ -368,12 +368,13 @@ p {
 
 .image-container {
   display: flex;
+  flex-direction: column; /* Change flex direction to column */
 }
 
 .image-box {
   margin: 10px; /* Adjust spacing between boxes */
   border: 1px solid #ccc; /* Add border to create box effect */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 10px; /* Rounded corners */
   overflow: hidden; /* Hide overflow content */
 }
 
@@ -382,7 +383,6 @@ p {
   width: 100%; /* Ensure image fills the box */
   height: auto; /* Maintain aspect ratio */
 }
-
 
 
 @media screen and (max-width: 600px){
