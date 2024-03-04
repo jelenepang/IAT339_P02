@@ -326,6 +326,7 @@ a:hover, a:focus {
 /* PRODUCTS PAGE--------------------------*/
 #product{
   margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 .product-row{
   display: grid;
@@ -580,6 +581,11 @@ textarea{
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: .5rem;
 }
+.confirmation-form-container{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: .5rem;
+}
 .payment-form-block{
   padding: 1rem;
   border: solid var(--sage) .15rem;
@@ -590,9 +596,61 @@ textarea{
   margin-top: 2rem;
 }
 
-.payment-form-container{
+.payment-form-container, .confirmation-form-container{
   margin-top: 8rem;
 
+}
+
+ /* FOOTER */
+
+ footer{
+  margin-top: 16rem;
+  /* background-color: red; */
+  
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-links {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer a{
+  color: var(--champagne);
+}
+
+.footer-links a{
+  margin-left: 3rem;
+  margin-top: 1rem;
+} 
+
+.footer-links1{
+  margin-bottom: 3rem;
+}
+
+#backgroundColorF{
+  background-color: var(--moss);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 40%;
+  left: 0; 
+  right: 0;
+}
+#backgroundColorFP{
+  margin-top: 8rem;
+  background-color: var(--moss);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 40%;
+  left: 0; 
+  right: 0;
 }
 
 /* MEDIA QUERIES------------------- */
@@ -739,6 +797,10 @@ textarea{
       border-radius: .5rem;
       margin-left: .1rem;
       align-items: center;
+    }
+
+    #backgroundColorF{
+      height: 30rem;
     }
 
   }

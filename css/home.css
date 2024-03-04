@@ -169,6 +169,7 @@ margin-left: 1rem;
 
   #section4{
     margin-top: 16rem;
+    margin-bottom: 6rem;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     column-gap: .5rem;
@@ -434,7 +435,55 @@ margin-left: 1rem;
   .active-tab{
     background-color: sage;
   }
-  
+
+  #backgroundColor2{
+    height: 58rem;
+    
+  }
+
+  /* FOOTER */
+
+  footer{
+    margin-top: 14rem;
+    /* background-color: red; */
+    
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .footer-links {
+    display: flex;
+    /* flex: 1;  */
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  footer a{
+    color: var(--champagne);
+  }
+
+  .footer-links a{
+    margin-left: 3rem;
+    margin-top: 1rem;
+  } 
+
+  .footer-links1{
+    margin-bottom: 3rem;
+  }
+
+  #backgroundColorF{
+    background-color: var(--moss);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 40%;
+    left: 0; 
+    right: 0;
+  }
+
   /* MEDIA QUERIES------------------- */
   @media screen and (max-width: 1266px){
     /* INDEX */
@@ -461,12 +510,14 @@ margin-left: 1rem;
     #section4{
       flex-wrap: wrap;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      margin-bottom: 0;
+      margin-bottom: 8rem;
       margin-top: 16rem;
     }
     #blank{
       display: none;
     }
+    
+
 
     @media screen and (max-width: 1010px){
       header div{
@@ -492,9 +543,6 @@ margin-left: 1rem;
       #backgroundColor{
         height: 48rem;
       }
-      #backgroundColor2{
-        height: 48rem;
-      }
       #section3{
         margin-top: 16rem;
       }
@@ -513,10 +561,11 @@ margin-left: 1rem;
         margin-bottom: 4rem;
         grid-template-columns: repeat(1, minmax(0, 1fr));
         row-gap: 1rem;
+        margin-bottom: 8rem;
 
       }
       #backgroundColor2{
-        height: 100rem;
+        height: 110rem;
       }
     }
 
@@ -534,6 +583,12 @@ margin-left: 1rem;
         border-radius: .5rem;
         margin-left: .1rem;
         align-items: center;
+      }
+      #backgroundColorF{
+        height: 30rem;
+      }
+      #backgroundColor{
+        height: 55rem;
       }
 
     }

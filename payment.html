@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Checkout Template</title>
+    <title>MODU Payment Page</title>
     <link href="css/main.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   </head>
@@ -47,9 +47,37 @@
             </div>
         </div>
       <input type="reset" value="Cancel">
-      <input id="checkout" type="submit" value="Pay Now">
+      <input id="confirmation" type="submit" value="Pay now">
     </section><br><br>
     </section>
+
+    <div id="backgroundColorFP"></div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links1"> 
+          <a href="home.html"><img class="modu-logo" src="img/modu_logo.png" alt="MODU logo illustration"></a>
+          <a class="button2-navBar" href="https://www.facebook.com/"><img class="icon" src="img/facebook-icon.png" alt=""></a>
+          <a class="button2-navBar" href="https://www.instagram.com/"><img class="icon" src="img/insta-icon.png" alt=""></a>
+          <a class="button2-navBar" href="https://twitter.com/"><img class="icon" src="img/twitter-icon.png" alt=""></a>
+        </div>
+
+        
+        <div class="footer-links">
+          <a href="home.html">Home</a>
+          <a href="#section3">The Team</a>
+          <a href="blog.html">Our Blog</a>
+          <a href="products.html">Products</a>
+          <a href="checkout.html">Shopping Cart</a>
+          <a href="contact.html">Contact Us</a><br>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("confirmation").addEventListener("click", function() {
+      window.location.href = "confirmation.html"; // Replace "payment.html" with the URL of the destination HTML page
+      });
+      </script>
 
 
 </body>
