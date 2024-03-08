@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>MODU Checkout</title>
+    <title>MODU Wishlist</title>
     <link href="css/main.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   </head>
@@ -24,9 +24,9 @@
       <div>
         <a class="burger-navBar" href="#"><img class="icon" src="img/menu-icon.png" alt=""></a>
         <input id="search-bar" type="text" placeholder="Search.." name="search">
-        <a class="button2-navBar search-button" href="#"><img class="icon" src="img/search-icon.png" alt=""></a>
-        <a class="button2-navBar-active" href="checkout.html"><img class="icon" src="img/cart-icon.png" alt=""></a>
-        <a class="button2-navBar" href="wishlist.html"><img class="icon" src="img/heart-icon.png" alt=""></a>
+        <a class="button2-navBar search-button" id="search-button" href="#"><img class="icon" src="img/search-icon.png" alt=""></a>
+        <a class="button2-navBar" href="checkout.html"><img class="icon" src="img/cart-icon.png" alt=""></a>
+        <a class="button2-navBar-active" href="wishlist.html"><img class="icon" src="img/heart-icon.png" alt=""></a>
       </div>
     </div>
   </header>
@@ -34,21 +34,20 @@
       <section class="element">
 
       <!-- PRODUCT SECTION -->
-          <section id="cart">
-            <h3> SHOPPING CART </h3>
+          <section id="wishlist">
+            <h3> WISHLIST </h3>
             <div class="cart-grid-container">
               <div class="cart-divs">
                 <div>
-                  <img src="img/sofa1.jpg" alt="a sofa"><br>
+                  <img src="img/sofa4.jpg" alt="a sofa"><br>
                 </div>
                 <div>
                   <h4>PUFF Modular Sofa</h4>
                   <p>$2999.99</p>
                   <a href="product_description2.html">Click here for product description</a><br><br>
-                  <label for="quantity-input">Quantity</label>
-                  <input class="quantity-input" type="number" placeholder="1"><br>
                   
                 </div>
+                
               </div>
               <div class="cart-divs">
                 <div>
@@ -58,10 +57,31 @@
                   <h4>TUFF Modular Sofa</h4>
                   <p>$2999.99</p>
                   <a href="product_description2.html">Click here for product description</a><br><br>
-                  <label for="quantity-input">Quantity</label>
-                  <input class="quantity-input" type="number" placeholder="1"><br>
                 </div>
               </div>
+
+              <div class="cart-divs">
+                <div>
+                  <img src="img/bed.jpg" alt="a sofa"><br>
+                </div>
+                <div>
+                  <h4>TUFF Modular Sofa</h4>
+                  <p>$2999.99</p>
+                  <a href="product_description2.html">Click here for product description</a><br><br>
+                </div>
+              </div>
+
+              <div class="cart-divs">
+                <div>
+                  <img src="img/greensofa.jpg" alt="a sofa"><br>
+                </div>
+                <div>
+                  <h4>TUFF Modular Sofa</h4>
+                  <p>$2999.99</p>
+                  <a href="product_description2.html">Click here for product description</a><br><br>
+                </div>
+              </div>
+
               <!-- <div>
                 <img src="img/sofa5.jpg" alt="a sofa"><br><a href="product_description2.html">Click here for product description</a>
                 <h4>BURGER Modular Sofa</h4>
@@ -71,7 +91,6 @@
                 <br>
               </div> -->
             </div>
-            <a class="button" href="payment.html">Go to Payment</a>
           </section>
       </section>
 
@@ -96,6 +115,12 @@
           </div>
         </div>
       </footer>
+
+      <script>
+      document.getElementById("checkout").addEventListener("click", function() {
+      window.location.href = "payment.html"; // Replace "payment.html" with the URL of the destination HTML page
+      });
+      </script>
 
 
 

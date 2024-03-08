@@ -17,7 +17,7 @@
 
 <!-- PAYMENT SECTION -->
       <section>
-        <a class="button-navBar" href="checkout.html">Back</a>
+        <a class="button" href="checkout.html">Back</a>
         <div class="payment-form-container">
             <div class="payment-form-block">
                 <form method="post" action="#">
@@ -46,8 +46,8 @@
                     </p>
             </div>
         </div>
-      <input type="reset" value="Cancel">
-      <input id="confirmation" type="submit" value="Pay now">
+      <a class="button-cancel" href="checkout.html">Cancel</a>
+      <a class="button" href="confirmation.html">Pay Now</a>
     </section><br><br>
     </section>
 
@@ -72,12 +72,6 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      document.getElementById("confirmation").addEventListener("click", function() {
-      window.location.href = "confirmation.html"; // Replace "payment.html" with the URL of the destination HTML page
-      });
-      </script>
 
 
 </body>

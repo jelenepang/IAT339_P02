@@ -17,30 +17,93 @@
           <a class="button-navBar" href="products.html">Products</a>
           <a class="button-navBar-active" href="blog.html">MODU Blog</a>
           <a class="button-navBar" href="contact.html">Contact Us</a>
+          <a class="button-navBar" href="index.html">Style Guide</a>
+
       </nav>
 
       <div>
         <a class="burger-navBar" href="#"><img class="icon" src="img/menu-icon.png" alt=""></a>
         <input id="search-bar" type="text" placeholder="Search.." name="search">
-        <a class="button2-navBar" href="#"><img class="icon" src="img/search-icon.png" alt=""></a>
+        <a class="button2-navBar search-button" href="#"><img class="icon" src="img/search-icon.png" alt=""></a>
         <a class="button2-navBar" href="checkout.html"><img class="icon" src="img/cart-icon.png" alt=""></a>
-        <a class="button2-navBar" href="#"><img class="icon" src="img/heart-icon.png" alt=""></a>
+        <a class="button2-navBar" href="wishlist.html"><img class="icon" src="img/heart-icon.png" alt=""></a>
       </div>
     </div>
   </header>
 
     <section class="blog">
 
-    <h2> MODU BLOG </h2>
+      <h3> MODU BLOG </h3>
+
+    <p> Explore Our Furniture Fan Gallery: Real Homes, Real Style! Discover Instagram-worthy posts from our satisfied customers showcasing their stunning furniture finds. Get inspired and see how our pieces elevate their spaces!</p>
+      <div class="product-row">
+        <!-- FIRST ROW -->
+          <div class="product-column">
+              <div class="username">
+                <span>jena5403</span>
+              <button class="follow-button">Follow</button>
+            </div>
+            <div class="date">January 1, 2024</div>
+            <div class="product-img"> <img src="img/orangesofa.jpeg" alt="a sofa"></div>
+            <div class="likes">
+              <input class="heart" type="submit" value="❤"> 100 Likes
+            </div>
+            <div class="comments">
+              <input class="comment" type="submit" value="💭"> 0 comments
+            </div>
+            <div class="description">
+              The vibrant orange color adds a pop of warmth and personality to the room.
+              #orange #newsofa #warm</div>
+          </div>
+
+          <div class="product-column">
+            <div class="username">
+              <span>krnov33</span>
+            <button class="follow-button">Follow</button>
+          </div>
+          <div class="date">July 31, 2023</div>
+            <div class="product-img"> <img src="img/ivorysofa.jpeg" alt="a sofa"></div>
+            <div class="likes">
+              <input class="heart" type="submit" value="❤"> 70 Likes
+            </div>
+            <div class="comments">
+              <input class="comment" type="submit" value="💭"> 1 comments
+            </div>
+            <div class="description">
+              The calm ivory colored sofa adds a calm vibe to the room.
+              #ivory #calm #happy</div>
+          </div>
+
+          <div class="product-column">
+            <div class="username">
+              <span>ashleyk2</span>
+            <button class="follow-button">Follow</button>
+          </div>
+          <div class="date">May 5, 2023</div>
+            <div class="product-img"> <img src="img/sidetable.jpeg" alt="a sofa"></div>
+            <div class="likes">
+              <input class="heart" type="submit" value="❤"> 145 Likes
+            </div>
+            <div class="comments">
+              <input class="comment" type="submit" value="💭"> 23 comments
+            </div>
+            <div class="description">
+              I got the new sidetable, such a fresh design!
+              #yellow #rounded #fresh #new </div>
+            </div>
+
+
     <!-- PRODUCT SECTION -->
-        <section id="feed">
+        <!-- <section id="feed">
           <div class="post">
           <div class="username">
             <span>jena5403</span>
           <button class="follow-button">Follow</button>
         </div>
         <div class="date">January 1, 2024</div>
-        <img src="img/orangesofa.jpeg" alt="Post 1">
+        <div class="post-img">
+          <img src="img/orangesofa.jpeg" alt="Post 1">
+        </div>
         <div class="likes">
           <input class="heart" type="submit" value="❤"> 100 Likes
         </div>
@@ -50,7 +113,7 @@
         <div class="description">
           The vibrant orange color adds a pop of warmth and personality to the room.
           #orange #newsofa #warm</div>
-      </div><br>
+      </div>
 
           <div class="post">
           <div class="username">
@@ -58,7 +121,9 @@
           <button class="follow-button">Follow</button>
         </div>
         <div class="date">July 31, 2023</div>
-        <img src="img/ivorysofa.jpeg" alt="Post 2">
+        <div class="post-img">
+          <img src="img/ivorysofa.jpeg" alt="Post 2">
+        </div>
         <div class="likes">
           <input class="heart" type="submit" value="❤"> 70 Likes
         </div>
@@ -68,7 +133,7 @@
         <div class="description">
           The calm ivory colored sofa adds a calm vibe to the room.
           #ivory #calm #happy</div>
-      </div><br>
+      </div>
 
 
           <div class="post">
@@ -77,7 +142,9 @@
           <button class="follow-button">Follow</button>
         </div>
         <div class="date">May 5, 2023</div>
-        <img src="img/sidetable.jpeg" alt="Post 3">
+        <div class="post-img">
+          <img src="img/sidetable.jpeg" alt="Post 3">
+        </div>
         <div class="likes">
           <input class="heart" type="submit" value="❤"> 145 Likes
         </div>
@@ -87,7 +154,7 @@
         <div class="description">
           I got the new sidetable, such a fresh design!
           #yellow #rounded #fresh #new </div>
-      </div><br>
+      </div>
 
           <div class="post">
           <div class="username">
@@ -95,7 +162,9 @@
           <button class="follow-button">Follow</button>
         </div>
         <div class="date">January 13, 2023</div>
+        <div class="post-img">
         <img src="img/greensofa.jpg" alt="Post 4">
+        </div>
         <div class="likes">
           <input class="heart" type="submit" value="❤"> 43 Likes
         </div>
@@ -105,7 +174,7 @@
         <div class="description">
           Time to get ready for the spring!
           #green #fresh #spring #ready </div>
-      </div><br>
+      </div> -->
 
 
 

@@ -52,6 +52,10 @@ header div{
   border: solid 0.1rem var(--moss);
   height: .8rem;
   margin: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: .2rem;
+
 }
 
 .button2-navBar{
@@ -65,6 +69,11 @@ header div{
   border: var(--moss) solid .1rem;
   margin-left: .1rem;
   align-items: center;
+}
+.search-button{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
 }
 
 .button2-navBar img:hover, .button2-navBar img:focus {
@@ -440,7 +449,7 @@ p {
   }
 }
 
-  @media screen and (max-width: 1010px){
+  @media screen and (max-width: 1150px){
     header div{
       display: block;
       margin-top: 1rem;
@@ -492,7 +501,7 @@ p {
     }
   }
 
-  @media screen and (max-width: 580px){
+  @media screen and (max-width: 700px){
     header nav{
       display: none;
     }

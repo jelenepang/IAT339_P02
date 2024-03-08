@@ -17,6 +17,25 @@
     height: 1rem;
   }
 
+  .button{
+    display: inline-block;
+    padding: 0.8rem;
+    color: white;
+    background-color: var(--moss);
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.3s;
+    border-radius: .5rem;
+  }
+  
+  .button:hover, .button:focus{
+    color: var(--sage);
+    background-color: var(--champagne);
+    box-shadow: 0 0 0 .05rem var(--sage);
+  
+  }
+  
+
   header{
     /* display: flex; */
     align-items: center;
@@ -42,7 +61,12 @@
     border: solid 0.1rem var(--moss);
     height: .8rem;
     margin: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: .1rem;
+
   }
+
 
   .button2-navBar{
     display: inline-block;
@@ -53,9 +77,16 @@
     transition-duration: 0.3s;
     border-radius: .5rem;
     border: var(--moss) solid .1rem;
-    margin-left: .1rem;
+    margin-left: .2rem;
     align-items: center;
   }
+
+  .search-button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+  }
+
 
   .button2-navBar img:hover, .button2-navBar img:focus {
     filter: invert(49%) sepia(51%) saturate(488%) hue-rotate(327deg) brightness(98%) contrast(90%);
@@ -100,6 +131,8 @@
   
   .button-navBar:hover, .button-navBar:focus {
     background-color: var(--champagne);
+    box-shadow: 0 0 0 .05rem var(--rose);
+
   }
   .button-navBar-active{
     background-color: var(--sage);
@@ -240,6 +273,7 @@
     margin-left: 0rem;
     margin-right: 1rem;
     border: 1px solid var(--sage);
+    margin-bottom: 1.5rem;
   }
 
   #form-div input[type="text"]{
@@ -309,6 +343,11 @@ footer a{
 .footer-links1{
   margin-bottom: 3rem;
 }
+.footer-links a:hover, .footer-links a:focus{
+  color: var(--sage);
+  text-decoration: underline;
+
+}
 
 #backgroundColorF{
   background-color: var(--moss);
@@ -351,7 +390,7 @@ footer a{
       display: none;
     }
 
-    @media screen and (max-width: 1010px){
+    @media screen and (max-width: 1150px){
       header div{
         display: block;
         margin-top: 1rem;
@@ -407,7 +446,7 @@ footer a{
       }
     }
 
-    @media screen and (max-width: 580px){
+    @media screen and (max-width: 700px){
       header nav{
         display: none;
       }
