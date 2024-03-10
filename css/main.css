@@ -410,11 +410,13 @@ a:hover, a:focus {
   height: 60%;
   border-radius: .5rem;
 }
-.product-img:hover{
+
+.product-img:hover, .product-img:focus{
   transition-duration:.3s;
-  filter: opacity(50%);  
+  filter: opacity(50%);
   box-shadow: 0 0 0 .1rem white;
 }
+
 
 .heart{
   padding: .8rem;
