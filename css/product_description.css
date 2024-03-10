@@ -19,9 +19,6 @@ body {
   background-color:var(--champagne);
 }
 
-#description{
-  margin-top: 8rem;
-}
 .icon{
   height: 1rem;
 }
@@ -63,7 +60,7 @@ header div{
   padding: 0.6rem;
   background-color: var(--champagne);
   text-decoration: none;
-  transition-property: background-color; 
+  transition-property: background-color;
   transition-duration: 0.3s;
   border-radius: .5rem;
   border: var(--moss) solid .1rem;
@@ -79,7 +76,7 @@ header div{
 .button2-navBar img:hover, .button2-navBar img:focus {
   filter: invert(49%) sepia(51%) saturate(488%) hue-rotate(327deg) brightness(98%) contrast(90%);
   /* https://codepen.io/sosuke/pen/Pjoqqp */
-  
+
 }
 .button2-navBar:hover, .button2-navBar:focus, #search-bar:hover, #search-bar:focus {
   border: var(--rose) solid .1rem;
@@ -88,12 +85,12 @@ header div{
 
 #search-bar:hover, #search-bar:focus {
   background-color: rgb(245, 194, 171);
-  
+
 }
 
 #search-bar:hover::placeholder, #search-bar:focus::placeholder {
   color: var(--rose);
-  
+
 }
 
 nav a:hover, nav a:focus {
@@ -110,7 +107,7 @@ input{
   font-family: 'Lato', sans-serif;
   border-style: none;
   transition-duration: 0.5s;
-} 
+}
 
 input:hover, input:focus{
   background-color: var(--rose);
@@ -156,7 +153,7 @@ h4 {
 }
 
 p {
-  color: black;
+  color: var(--dark sage);
   font-weight: normal;
   margin-top: 0;
   /* max-width:90%; */
@@ -355,43 +352,114 @@ a:hover, a:focus {
   border: solid 1px white;
 }
 
-
-.product-description {
-    background-color: rgba(148, 167, 118, 0.3);
-    border-radius: .5rem;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    /* padding: 20px; */
-    /* margin: 20px; */
-    width: fit-content;
-    padding: 2rem;
-    margin-bottom: 1rem;  
-}
-
 h2 {
-    color: #333;
+    color: #283f21;
 }
 
-p {
-    color: #666;
+
+li{
+  color: #666;;
+  font-weight: normal;
+  margin-top: 0;
+  font-size: 1rem;
 }
 
-.image-container {
-  display: flex;
-  flex-direction: column; /* Change flex direction to column */
+.back-button{
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
-.image-box {
-  margin: 10px; /* Adjust spacing between boxes */
-  border: 1px solid #ccc; /* Add border to create box effect */
-  border-radius: 10px; /* Rounded corners */
-  overflow: hidden; /* Hide overflow content */
-}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .description {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(148,167,118,0.4);
+    max-width: 250px;
+    border-radius: 10px;
+  }
+  .description h2 {
+    margin-top: 2rem;
+  }
+  .image {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .image img {
+    width: 300px;
+    height:300px;
+    margin: 10px;
+    border-radius: 10px;
+  }
 
-.image-box img {
-  display: block;
-  width: 100%; /* Ensure image fills the box */
-  height: auto; /* Maintain aspect ratio */
-}
+  .product-color{
+    margin-bottom: 1rem;
+    max-width: 10rem;
+    margin-top: 6rem;
+    column-gap: .5rem;
+    display: flex;
+  }
+
+  .rose-color, .sage-color, .tan-color, .moss-color{
+    border-radius: .5rem;
+    width: 2rem;
+    height: 1rem;
+  }
+  .rose-color{
+    background-color: var(--rose);
+  }
+  .sage-color{
+    background-color: rgb(55, 80, 105);
+  }
+  .tan-color{
+    background-color: tan;
+  }
+  .moss-color{
+    background-color: var(--moss);
+  }
+
+  label[for=quantity-input], label[for=form-comment], label[for=form-input]{
+    margin-top: 0%;
+    font-weight:600;
+    color: var(--sage);
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+  .quantity-input{
+    background-color: white;
+    border: 1px solid var(--sage);
+    width: 3rem;
+    margin-top: .5rem;
+  }
+  .quantity-input:hover, #form-comment:hover, #form-input:hover, #card-num-input:hover, #card-date-input:hover, #card-cvv-input:hover, #card-name-input:hover, textarea:hover, textarea:focus{
+    transition-duration: 0.5s;
+    background-color: rgb(230, 230, 230);
+  }
+
+
+  .button{
+    display: inline-block;
+    padding: 0.5rem;
+    color: white;
+    background-color: var(--moss);
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    border-radius: .3rem;
+    font-size: 1rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+
+  .button:hover, .button:focus{
+    color: var(--sage);
+    background-color: var(--champagne);
+    box-shadow: 0 0 0 .05rem var(--sage);
+
+
 
 
 @media screen and (max-width: 600px){
@@ -510,7 +578,7 @@ p {
       padding: 0.6rem;
       background-color: var(--moss);
       text-decoration: none;
-      transition-property: background-color; 
+      transition-property: background-color;
       transition-duration: 0.3s;
       border-radius: .5rem;
       margin-left: .1rem;
