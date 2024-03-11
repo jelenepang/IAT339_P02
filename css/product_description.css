@@ -9,6 +9,7 @@
   --champagne: #fffdf4;
   --moss: #94a776;
   --rose: #d1765b;
+  --lightRose: rgb(245, 194, 171);
 }
 /* MAIN */
 body {
@@ -478,6 +479,8 @@ li{
     font-size: 1rem;
     font-family: inherit;
     cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 8rem;
   }
   
   button:hover, button:focus{
@@ -486,6 +489,24 @@ li{
     box-shadow: 0 0 0 .05rem var(--sage);
     text-decoration: none;
   }
+
+  
+.heart{
+  padding: .7rem;
+  border-radius: .5rem;
+  color: tan;
+  background-color: var(--champagne);
+  border: solid tan .1rem;
+  text-decoration: none;
+  
+}
+
+.heart:hover{
+   color: var(--rose);
+   border: solid .1rem var(--rose);
+   background-color: var(--lightRose);
+}
+
 
 
 
