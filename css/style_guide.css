@@ -62,10 +62,6 @@ header div{
 .type a:hover, .type a:focus{
   text-decoration: underline;
 }
-.element a:hover, .element a:focus{
-  text-decoration: underline;
-}
-
 
 .navBarSample a:hover, .navBarSample a:focus{
   text-decoration: none;
@@ -747,6 +743,9 @@ footer a{
   background-color: var(--champagne);
   box-shadow: 0 0 0 .05rem var(--sage);
   text-decoration: none;
+}
+.link:hover, .link:focus{
+  text-decoration: underline;
 }
 
 /* MEDIA QUERIES------------------- */

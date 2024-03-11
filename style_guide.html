@@ -108,9 +108,9 @@
               <p>This simplistic logotype means few variations. For contrast reasons, Dark sage #283f21 will be used against a light background. In the case of a darker background color, champagne #fffbea can be used. <br>A stacked design may be used in fitting situations. Example are shown below.</p>
 
               <div class="logo-grid-container">
-                  <div class="dark-logo"> <div><img src="img/modu_logo.png" alt="modular dining table and chair set"></div></div>
-                  <div class="light-logo"> <div><img src="img/modu_light_logo.png" alt="green round modular sofa"></div></div>
-                  <div class="stacked-logo"><div><img src="img/logo.png" alt="boomerang bed frame with sliding table"></div></div>
+                  <div class="dark-logo"> <div><img src="img/modu_logo.png" alt="Dark green MODU logo"></div></div>
+                  <div class="light-logo"> <div><img src="img/modu_light_logo.png" alt="Light colored MODU logo"></div></div>
+                  <div class="stacked-logo"><div><img src="img/logo.png" alt="Stacked MODU logo"></div></div>
               </div>
 
 
@@ -320,7 +320,12 @@
 
         <h4>Sample code:</h4>
         <code>&lt;section id="product"&gt;</code>
-        <code>&lt;div>&lt;img class="product-img"src="img/puffa.webp" alt="a sofa">&lt;/div&gt;</code>
+        <code>&lt;div class="product-row"&gt;</code>
+        <code>&lt;div class="product-column"&gt;</code>
+        <code>&lt;div class="product-img"&gt;</code>
+
+        <code>&lt;a href="#"> &lt;img src="img/puffa.webp" alt="a sofa">&lt;/a&gt;</code>
+        <code>&lt;/div&gt;</code>
         <code>&lt;div>&lt;h4>PUFF Modular Sofa&lt;/h4>&lt;p>$2999.99&lt;/p>&lt;/div&gt;</code>
         <code>&lt;div class="product-color"></code>
         <code>&lt;div class="rose-color">&lt;/div&gt;</code>
@@ -337,21 +342,53 @@
         <h4>Rendered element:</h4>
 
         <section id="product">
-          <div class="product-column-sample">
-              <div> <img class="product-img"src="img/puffa.webp" alt="a sofa"></div>
-              <div><h4>PUFF Modular Sofa</h4><p>$2999.99</p></div>
-              
+          <div class="product-row">
+            <div class="product-column">
+              <div class="product-img">
+                <a href="#"><img src="img/puffa.webp" alt="Top view of 3 modular sofas"></a>
+              </div>
+              <div><h4>HILLS Modular Sofa</h4><p>$2999.99</p></div>
+
               <div class="product-color">
                 <div class="rose-color"></div>
                 <div class="sage-color"></div>
                 <div class="tan-color"></div>
                 <div class="moss-color"></div>
               </div>
+              <a class="button" href="#">Add to Cart</a>
+              
+              <a class="heart" href="#">❤</a>
+              <!-- <input class="heart" type="submit" value="❤"> -->
+            </div>
 
-              <div class="product-buttons">
-                <button href="#">Add to Cart</button>
-                <a class="heart" href="#">❤</a>
+            <div class="product-column">
+              <div class="product-img">
+                <a href="#"><img src="img/sofa3.jpg" alt="Orange plain modular sofa"></a>
               </div>
+              <div><h4>PLAIN Modular Sofa</h4><p>$3999.99</p></div>
+
+              <div class="product-color">
+                <div class="rose-color"></div>
+                <div class="tan-color"></div>
+                <div class="moss-color"></div>
+              </div>
+                <a class="button" href="#">Add to Cart</a>
+                <a class="heart" href="#">❤</a>
+            </div>
+
+            <div class="product-column">
+              <div class="product-img">
+                <a href="#"><img src="img/sofa1.jpg" alt="A white round modular sofa"></a>
+              </div>
+              <div><h4>PUFF Modular Sofa</h4><p>$2999.99</p></div>
+
+              <div class="product-color">
+                <div class="sage-color"></div>
+                <div class="tan-color"></div>
+              </div>
+                <a class="button" href="#">Add to Cart</a>
+                <a class="heart" href="#">❤</a>
+            </div>
           </div>
 
 
@@ -362,7 +399,7 @@
         <h3>PAYMENT FORM</h3>
 
         <h4>CSS selector:</h4>
-        <p>#payment-form</p>
+        <p>#payment-form-container</p>
 
         <h4>Sample code:</h4>
         <code>&lt;div class="payment-form-container"></code>
@@ -437,7 +474,7 @@
 
 
         <h4>CSS selector:</h4>
-        <p>#checkout</p>
+        <p>#cart</p>
 
         <h4>Sample code:</h4>
         
@@ -498,12 +535,12 @@
             </div>
             <div class="cart-divs">
               <div>
-                <img src="img/sofa2.jpg" alt="a sofa"><br>
+                <img src="img/sofa2.jpg" alt="a coral modular sofa"><br>
               </div>
               <div>
                 <h4>TUFF Modular Sofa</h4>
                 <p>$2999.99</p>
-                <a href="#">Click here for product description</a><br><br>
+                <a class="link" href="#">Click here for product description</a><br><br>
                 <label for="quantity-input">Quantity</label>
                 <input class="quantity-input" type="number" placeholder="1"><br>
               </div>
@@ -515,10 +552,81 @@
 
     </section>
 
+
+
+    <section class="element">
+      <!-- checkout cart -->
+      <h3>WISHLIST</h3>
+
+      <h4>CSS selector:</h4>
+      <p>#cart</p>
+
+      <h4>Sample code:</h4>
+      
+
+      <code>&lt;section id="wishlist"></code>
+      <code>&lt;h3&gt;WISHLIST&lt;/h3></code>
+      <code>&lt;div class="cart-grid-container"></code>
+      <code>&lt;div class="cart-divs"></code>
+      <code>&lt;div></code>
+      <code>&lt;img src="img/sofa4.jpg" alt="a sofa"><br></code>
+      <code>&lt;/div></code>
+      <code>&lt;div></code>
+      <code>&lt;h4&gt;VIC Modular Sofa&lt;/h4></code>
+      <code>&lt;p&gt;$2999.99&lt;/p></code>
+      <code>&lt;a class="link" href="#">Click here for product description&lt;/a>&lt;br>&lt;br></code>
+      <code>&lt;/div></code>
+      <code>&lt;/div></code>
+
+      <code>&lt;div class="cart-divs"></code>
+      <code>&lt;div></code>
+      <code>&lt;img src="img/sofa2.jpg" alt="a sofa"><br></code>
+      <code>&lt;/div></code>
+      <code>&lt;div></code>
+      <code>&lt;h4&gt;TUFF Modular Sofa&lt;/h4></code>
+      <code>&lt;p&gt;$2999.99&lt;/p></code>
+      <code>&lt;a class="link" href="#">Click here for product description&lt;/a>&lt;br>&lt;br></code>
+      <code>&lt;/div></code>
+      <code>&lt;/div></code>
+      <code>&lt;/div></code>
+      <code>&lt;/section></code>
+
+      <h4>Rendered element:</h4>
+
+      <h3>WISHLIST</h3>
+      <section id="wishlist">
+        <div class="cart-grid-container">
+          <div class="cart-divs">
+            <div>
+              <img src="img/sofa4.jpg" alt="A 3 person deep green modular sofa"><br>
+            </div>
+            <div>
+              <h4>VIC Modular Sofa</h4>
+              <p>$2999.99</p>
+              <a class="link" href="#">Click here for product description</a><br><br>
+            </div>
+          </div>
+          <div class="cart-divs">
+            <div>
+              <img src="img/sofa2.jpg" alt="A coral 3 person modular sofa"><br>
+            </div>
+            <div>
+              <h4>TUFF Modular Sofa</h4>
+              <p>$2999.99</p>
+              <a class="link" href="#">Click here for product description</a><br><br>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    </section>
+
 <!-- CITATIONS -->
     <section id="citations">
       <section class="element">
-      <h3>CITATIONS</h3>
+      <h3>REFERENCES</h3>
 
       <ul>
         <!-- resources -->
@@ -540,7 +648,6 @@
         <li>NewEgg. Company. n.d. <strong>L-Shape Modular Sectional Sofa [Image].</strong>. Retrieved from <a href="https://www.newegg.com/p/29J-01PF-004P8">https://www.newegg.com/p/29J-01PF-004P8</a>.</li>
         <li> Rostyslav Sorokovyi. Designer. n.d. <strong>This Modular Pouf and Sofa Hybrid Concept Looks a Teeny Bit Uncomfortable [Image].</strong>. Retrieved from <a href="https://www.yankodesign.com/2022/04/23/this-modular-pouf-and-sofa-hybrid-concept-looks-a-teeny-bit-uncomfortable/">https://www.yankodesign.com/2022/04/23/this-modular-pouf-and-sofa-hybrid-concept-looks-a-teeny-bit-uncomfortable/</a>.</li>
       </ul>
-
     </section>
   </section>
   </body>

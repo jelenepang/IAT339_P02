@@ -193,9 +193,10 @@ margin-left: 1rem;
   #section4 p{
     line-height: 1.5rem;
   }
-  #section4 a:hover, #section4 a:focus{
+  .link:hover, .link:focus{
     text-decoration: underline;
   }
+
 
   .product-column{
     height: 28rem;
