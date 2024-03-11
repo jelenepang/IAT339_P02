@@ -638,7 +638,7 @@ textarea{
   height: 26rem;
 }
     .follow-button {
-      margin-left: 9.7rem;
+      float: right;
       padding: 5px 10px;
       background-color: #3897f0;
       color: #fff;
