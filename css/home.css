@@ -55,19 +55,19 @@
     padding: 0.6rem;
     background-color: var(--champagne);
     text-decoration: none;
-    transition-property: background-color; 
+    transition-property: background-color;
     transition-duration: 0.3s;
     border-radius: .5rem;
     border: var(--moss) solid .1rem;
     margin-left: .2rem;
     align-items: center;
-    
+
   }
 
   .button2-navBar img:hover, .button2-navBar img:focus {
     filter: invert(49%) sepia(51%) saturate(488%) hue-rotate(327deg) brightness(98%) contrast(90%);
     /* https://codepen.io/sosuke/pen/Pjoqqp */
-    
+
   }
   .button2-navBar:hover, .button2-navBar:focus, #search-bar:hover, #search-bar:focus {
     border: var(--rose) solid .1rem;
@@ -76,12 +76,12 @@
 
   #search-bar:hover, #search-bar:focus {
     background-color: rgb(245, 194, 171);
-    
+
   }
 
   #search-bar:hover::placeholder, #search-bar:focus::placeholder {
     color: var(--rose);
-    
+
   }
   .search-button{
     border-top-left-radius: 0;
@@ -110,7 +110,7 @@
 .imagery-grid-container{
   margin-top: 2rem;
   margin-bottom: 4rem;
-  display: grid;    
+  display: grid;
   column-gap: .5rem;
   row-gap: .5rem;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -128,7 +128,7 @@
     z-index: -1;
     width: 100%;
     height: 30rem;
-    left: 0; 
+    left: 0;
     right: 0;
 }
 
@@ -140,7 +140,7 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     column-gap: 3rem;
-    
+
   }
   #section2 img{
     width: 2rem;
@@ -175,7 +175,7 @@ margin-left: 1rem;
   z-index: -1;
   width: 100%;
   height: 70%;
-  left: 0; 
+  left: 0;
   right: 0;
 }
 
@@ -205,32 +205,32 @@ margin-left: 1rem;
     /* border: solid tan .15rem; */
     border-radius: .5rem;
   }
-  
+
   .product-img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 0.5rem; 
+    border-radius: 0.5rem;
   }
-    
+
   .product-img{
     height: 60%;
     border-radius: .5rem;
     margin-bottom: 2rem;
   }
-  
+
   .product-buttons a{
     padding: 4rem;
     background-color: red;
   }
-  
+
   .product-color{
     max-width: 10rem;
     margin-top: 1rem;
     column-gap: .5rem;
     display: flex;
   }
-  
+
   .rose-color, .sage-color, .tan-color, .moss-color{
     border-radius: .5rem;
     width: 2rem;
@@ -255,31 +255,31 @@ margin-left: 1rem;
   .larger{
     font-size: 2rem;
   }
-  
+
   .sample-type {
     color: black;
     margin-top: 3%;
     margin-bottom: 1%;
   }
-  
+
   .type p {
     padding-bottom: 1rem;
     border-bottom: solid tan .1rem;
   }
-  
+
   h1{
     color:var(--sage);
     font-size: 2rem;
   }
-  
+
   h3 {
     margin-top: 2rem;
   }
-  
+
   h4 {
     margin-bottom: 0.25rem;
   }
-  
+
   p {
     color: black;
     font-weight: normal;
@@ -287,7 +287,7 @@ margin-left: 1rem;
     max-width:90%;
     font-size: 1rem;
   }
-  
+
   li{
     margin-top: .8rem;
   }
@@ -297,33 +297,33 @@ margin-left: 1rem;
     background-color: rgba(210, 180, 140, 0.411);
     display: block;
   }
-  
+
   .element{
     margin-top: 2rem;
     padding-bottom: 2rem;
   }
-  
+
   a {
       color: var(--moss);
       transition: color 0.5s;
   }
-  
+
   a:hover, a:focus {
       color: var(--rose);
       text-decoration: none;
   }
-  
-   
+
+
   ::placeholder{
     color: var(--moss);
   }
-  
+
   .type{
     padding: 2em;
     border: solid tan .15rem;
     border-radius: .5rem;
   }
-  
+
   /* BUTTONS */
   .button-nav {
     display: inline-block;
@@ -332,10 +332,10 @@ margin-left: 1rem;
     background-color: var(--moss);
     border-radius: 0.5rem;
     text-decoration: none;
-    transition-property: background-color; 
+    transition-property: background-color;
     transition-duration: 0.5s;
   }
-  
+
   .button-nav:hover, .button-nav:focus {
     background-color: var(--rose);
     color: white;
@@ -349,11 +349,11 @@ margin-left: 1rem;
     color: white;
     background-color: var(--moss);
     text-decoration: none;
-    transition-property: background-color; 
+    transition-property: background-color;
     transition-duration: 0.3s;
     border-radius: .5rem;
   }
-  
+
   .button-navBar:hover, .button-navBar:focus{
     background-color: var(--champagne);
     box-shadow: 0 0 0 .05rem var(--rose);
@@ -362,12 +362,12 @@ margin-left: 1rem;
   .button-navBar-active{
     background-color:var(--sage);
   }
-  
+
   /* IMAGERY */
   .imagery-grid-container{
     margin-top: 2rem;
     margin-bottom: 4rem;
-    display: grid;    
+    display: grid;
     column-gap: .5rem;
     row-gap: .5rem;
     /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
@@ -379,12 +379,12 @@ margin-left: 1rem;
     width: 100%;
     object-fit: cover;
   }
-  
+
     /* IMAGERY */
     .profile-grid-container{
       margin-top: 2rem;
       margin-bottom: 4rem;
-      display: grid;    
+      display: grid;
       column-gap: .5rem;
       row-gap: .5rem;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -395,14 +395,14 @@ margin-left: 1rem;
       width: 100%;
       object-fit: cover;
     }
-  
-    
+
+
   /* https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css */
   /* IMAGE WITH LINK */
   .image-link img:hover, .image-link img:focus{
     filter: blur(8px);
     transition: 0.5s;
-  
+
   }
   .image-link img{
     margin: auto;
@@ -415,7 +415,7 @@ margin-left: 1rem;
     border-radius: .5rem;
     border: solid 1px white;
   }
-  
+
   /* INPUT and FORMS*/
   input{
     padding: 0.8rem;
@@ -428,28 +428,28 @@ margin-left: 1rem;
     font-family: 'Lato', sans-serif;
     border-style: none;
     transition-duration: 0.5s;
-  } 
-  
+  }
+
   input:hover, input:focus{
     background-color: var(--rose);
   }
-  
+
   input[type="reset"]{
     background-color: var(--champagne);
     border: solid var(--moss).1rem;
   }
-  
+
   input[type="reset"]:hover, input[type="reset"]:focus{
     border: var(--rose) solid .1rem;
     background-color: rgb(245, 194, 171);
   }
-  
+
   #form-input{
     background-color: white;
     border: 1px solid #c6c7cc;
     margin-top: .5rem;
   }
-  
+
 
   .active-tab{
     background-color: sage;
@@ -457,7 +457,7 @@ margin-left: 1rem;
 
   #backgroundColor2{
     height: 58rem;
-    
+
   }
 
   /* FOOTER */
@@ -465,7 +465,7 @@ margin-left: 1rem;
   footer{
     margin-top: 14rem;
     /* background-color: red; */
-    
+
   }
   .footer-container {
     display: flex;
@@ -478,6 +478,7 @@ margin-left: 1rem;
     padding: 10px;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 8rem;
   }
 
   footer a{
@@ -487,7 +488,7 @@ margin-left: 1rem;
   .footer-links a{
     margin-left: 3rem;
     margin-top: 1rem;
-  } 
+  }
 
   .footer-links1{
     margin-bottom: 3rem;
@@ -503,8 +504,8 @@ margin-left: 1rem;
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 40%;
-    left: 0; 
+    height: 60%;
+    left: 0;
     right: 0;
   }
 
@@ -514,7 +515,7 @@ margin-left: 1rem;
     color: white;
     background-color: var(--moss);
     text-decoration: none;
-    transition-property: background-color; 
+    transition-property: background-color;
     transition-duration: 0.3s;
     border-radius: .5rem;
     border: none;
@@ -522,7 +523,7 @@ margin-left: 1rem;
     font-family: inherit;
     cursor: pointer;
   }
-  
+
   .button:hover, .button:focus{
     color: var(--sage);
     background-color: var(--champagne);
@@ -563,7 +564,7 @@ margin-left: 1rem;
     #blank{
       display: none;
     }
-    
+
 
 
     @media screen and (max-width: 1150px){
@@ -625,7 +626,7 @@ margin-left: 1rem;
         padding: 0.6rem;
         background-color: var(--moss);
         text-decoration: none;
-        transition-property: background-color; 
+        transition-property: background-color;
         transition-duration: 0.3s;
         border-radius: .5rem;
         margin-left: .1rem;
@@ -646,4 +647,3 @@ margin-left: 1rem;
       }
     }
   }
-  

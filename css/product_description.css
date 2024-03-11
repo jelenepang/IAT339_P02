@@ -384,6 +384,7 @@ li{
     background-color: rgb(148,167,118,0.4);
     /* max-width: 250px; */
     border-radius: .5rem;
+    margin-bottom: 2rem;
   }
   .description h2 {
     margin-top: 2rem;
@@ -394,8 +395,8 @@ li{
     height: 50rem;
     column-gap: 1rem;
     row-gap: 1rem;
-    
-   
+
+
   }
   .image-column div{
     overflow: hidden;
@@ -468,7 +469,7 @@ li{
     color: white;
     background-color: var(--moss);
     text-decoration: none;
-    transition-property: background-color; 
+    transition-property: background-color;
     transition-duration: 0.3s;
     border-radius: .5rem;
     border: none;
@@ -476,18 +477,18 @@ li{
     font-family: inherit;
     cursor: pointer;
     margin-top: 1rem;
-    margin-bottom: 8rem;
+    margin-bottom: 1rem;
   }
-  
+
   .button:hover, .button:focus, button:hover, button:focus{
     color: var(--sage);
     background-color: var(--champagne);
     box-shadow: 0 0 0 .05rem var(--sage);
     text-decoration: none;
   }
-  
 
-  
+
+
 .heart{
   padding: .7rem;
   border-radius: .5rem;
@@ -495,13 +496,62 @@ li{
   background-color: var(--champagne);
   border: solid tan .1rem;
   text-decoration: none;
-  
+
 }
 
 .heart:hover{
    color: var(--rose);
    border: solid .1rem var(--rose);
    background-color: var(--lightRose);
+}
+
+/* FOOTER */
+
+footer{
+  margin-top: 14rem;
+  /* background-color: red; */
+
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-links {
+  display: flex;
+  /* flex: 1;  */
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 8rem;
+}
+
+footer a{
+  color: var(--champagne);
+}
+
+.footer-links a{
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.footer-links1{
+  margin-bottom: 3rem;
+}
+.footer-links a:hover, .footer-links a:focus{
+color: var(--sage);
+text-decoration: underline;
+
+}
+
+#backgroundColorF{
+  background-color: var(--moss);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 60%;
+  left: 0;
+  right: 0;
 }
 
 
@@ -654,4 +704,3 @@ li{
   }
 
   }
-
