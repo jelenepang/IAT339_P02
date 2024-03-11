@@ -24,7 +24,7 @@ body {
   height: 1rem;
 }
 
-button{
+.button{
   display: inline-block;
   padding: 0.8rem;
   color: white;
@@ -39,7 +39,7 @@ button{
   cursor: pointer;
 }
 
-button:hover, button:focus{
+.button:hover, .button:focus{
   color: var(--sage);
   background-color: var(--champagne);
   box-shadow: 0 0 0 .05rem var(--sage);

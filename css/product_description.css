@@ -466,7 +466,7 @@ li{
   }
 
 
-  button{
+  .button, button{
     display: inline-block;
     padding: 0.8rem;
     color: white;
@@ -483,12 +483,13 @@ li{
     margin-bottom: 8rem;
   }
   
-  button:hover, button:focus{
+  .button:hover, .button:focus, button:hover, button:focus{
     color: var(--sage);
     background-color: var(--champagne);
     box-shadow: 0 0 0 .05rem var(--sage);
     text-decoration: none;
   }
+  
 
   
 .heart{
