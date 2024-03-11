@@ -18,23 +18,6 @@
     height: 1rem;
   }
 
-  .button{
-    display: inline-block;
-    padding: 0.8rem;
-    color: white;
-    background-color: var(--moss);
-    text-decoration: none;
-    transition-property: background-color; 
-    transition-duration: 0.3s;
-    border-radius: .5rem;
-  }
-  
-  .button:hover, .button:focus{
-    color: var(--sage);
-    background-color: var(--champagne);
-    box-shadow: 0 0 0 .05rem var(--sage);
-
-  }
 
   header{
     /* display: flex; */
@@ -208,6 +191,9 @@ margin-left: 1rem;
   }
   #section4 p{
     line-height: 1.5rem;
+  }
+  #section4 a:hover, #section4 a:focus{
+    text-decoration: underline;
   }
 
   .product-column{
@@ -519,6 +505,29 @@ margin-left: 1rem;
     left: 0; 
     right: 0;
   }
+
+  button{
+    display: inline-block;
+    padding: 0.8rem;
+    color: white;
+    background-color: var(--moss);
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.3s;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  
+  button:hover, button:focus{
+    color: var(--sage);
+    background-color: var(--champagne);
+    box-shadow: 0 0 0 .05rem var(--sage);
+    text-decoration: none;
+  }
+
 
   /* MEDIA QUERIES------------------- */
   @media screen and (max-width: 1266px){

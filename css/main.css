@@ -24,7 +24,7 @@ body {
   height: 1rem;
 }
 
-.button{
+button{
   display: inline-block;
   padding: 0.8rem;
   color: white;
@@ -33,14 +33,19 @@ body {
   transition-property: background-color; 
   transition-duration: 0.3s;
   border-radius: .5rem;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
 }
 
-.button:hover, .button:focus{
+button:hover, button:focus{
   color: var(--sage);
   background-color: var(--champagne);
   box-shadow: 0 0 0 .05rem var(--sage);
-
+  text-decoration: none;
 }
+
 
 .button-cancel{
   display: inline-block;
@@ -620,6 +625,13 @@ textarea{
 }
 
 /* SHOPPING CART TEMPLATE -------------------*/ 
+#cart a:hover, #cart a:focus{
+  text-decoration: underline;
+}
+#wishlist a:hover, #wishlist a:focus{
+  text-decoration: underline;
+
+}
 .cart-grid-container{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
